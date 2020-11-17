@@ -1,0 +1,24 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">Cell Number:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="CellNum"
+        placeholder="Enter Cell Number">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Email:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Email"
+        placeholder="Enter Email">
+    </div>
+
+   
+
+    <label class="col-sm-2 col-form-label">ID Number:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="idNumber"
+        placeholder="Enter idNumber">
+    </div>
+</div>
+
+<button (click)="addContact()"  class="btn btn-primary">Add</button>
+<button (click)="updateContact()"  class="btn btn-primary">Update</button>

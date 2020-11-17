@@ -1,0 +1,56 @@
+<div class="d-flex flex-row bd-highlight mb-3">
+
+<div class="form-froup row" style="width: 60%;">
+    <label class="col-sm-2 col-form-label">ID Number:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="idNumber"
+        placeholder="Enter ID Number">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Full Name:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="FullName"
+        placeholder="Enter Full Name">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Initials:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Initials"
+        placeholder="Enter Initials">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Email:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="email"
+        placeholder="Enter Email">
+    </div>
+
+    <label class="col-sm-2 col-form-label">PictureFile:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="PictureFile"
+        placeholder="Enter PictureFile">
+    </div>
+
+    <label class="col-sm-2 col-form-label">TextFile:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="TextFile"
+        placeholder="Enter TextFile">
+    </div>
+
+    <label class="col-sm-2 col-form-label">ExcelFile:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="ExcelFile"
+        placeholder="Enter ExcelFile">
+    </div>
+
+
+</div>
+
+<div class="ml-3 bd-highlight" style="width: 40%;">
+<img [src]="FilePath" height="250px;" width="200px;">
+<input type="file" (change)="uploadPhoto($event)" class="mt-2">
+</div>
+</div>
+
+<button (click)="addData()"  class="btn btn-primary">Add</button>
+<button (click)="updateData()"  class="btn btn-primary">Update</button>

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DataClassUI"
+    }
+  },
+  "defaultProject": "DataClassUI",
+  "cli": {
+    "analytics": "7921a440-aaeb-424b-8216-ccee7d8bd0a1"
+  }
 }

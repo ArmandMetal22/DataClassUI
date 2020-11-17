@@ -1,0 +1,24 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">Picture FileName:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="PictureFile"
+        placeholder="Enter Picture FileName">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Text FileName:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="TextFile"
+        placeholder="Enter Text FileName">
+    </div>
+
+   
+
+    <label class="col-sm-2 col-form-label">Excel FileName:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="ExcelFile"
+        placeholder="Enter Excel FileName">
+    </div>
+</div>
+
+<button (click)="addFile()"  class="btn btn-primary">Add</button>
+<button (click)="updateFile()"  class="btn btn-primary">Update</button>
